@@ -8,11 +8,11 @@ resources:
     - repository: templates
       type: git
       name: Plumbing/core-templates
-    - repository: policies
+    - repository: policiesy
       type: git
       name: Plumbing/policies
 
 stages:
 - template: stages/sync/azure-sync.yml@templates  # Template reference
   parameters:
-    checkout: policies
+    checkout: policiesy
